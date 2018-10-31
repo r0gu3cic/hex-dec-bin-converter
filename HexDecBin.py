@@ -1,10 +1,3 @@
-# hex='f'
-# print('This is hexadecimal: '+hex)
-# dec=int(hex, base=16)
-# print('This is decimal: '+str(dec))
-# binary=bin(dec)[2:]
-# print('This is binary: '+str(binary))
-
 def hexToDec(hex):
     dec=int(hex, base=16)
     return dec
@@ -30,6 +23,7 @@ def binToHex(bin):
     hexa=decToHex(dec)
     return hexa
 
+###MAIN###
 print('''This is simple numerical system converter used to convert hexadecimal,
 decimal or binary number to hexadecimal, decimal or binary number''')
 while True:
