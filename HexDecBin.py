@@ -1,26 +1,26 @@
-def hexToDec(hex):
+def hex_to_dec(hex):
     dec=int(hex, base=16)
     return dec
 
-def binToDec(bin):
+def bin_to_dec(bin):
     dec=int(bin,base=2)
     return dec
 
-def hexToBin(hex):
+def hex_to_bin(hex):
     binary=bin(int(hex, base=16))[2:]
     return binary
 
-def decToBin(dec):
+def dec_to_bin(dec):
     binary=bin(int(dec))[2:]
     return binary
 
-def decToHex(dec):
+def dec_to_hex(dec):
     hexa=hex(int(dec))[2:]
     return hexa
 
-def binToHex(bin):
-    dec=binToDec(bin)
-    hexa=decToHex(dec)
+def bin_to_hex(bin):
+    dec=bin_to_dec(bin)
+    hexa=dec_to_hex(dec)
     return hexa
 
 ###MAIN###
@@ -36,22 +36,22 @@ Choice: ''')
         continue
     elif choice=='1':
         num=input('Input your binary number: ')
-        dec=binToDec(num)
+        dec=bin_to_dec(num)
         print('Your number converted to decimal: '+str(dec))
-        hex=binToHex(num)
+        hex=bin_to_hex(num)
         print('Your number converted to hexadecimal: '+str(hex))
         break
     elif choice=='2':
         num=input('Input your decimal number: ')
-        binary=decToBin(num)
+        binary=dec_to_bin(num)
         print('Your number converted to binary: '+str(binary))
-        hex=decToHex(num)
+        hex=dec_to_hex(num)
         print('Your number converted to hexadecimal: '+str(hex))
         break
     elif choice=='3':
         num=input('Input your hexadecimal number: ')
-        binary=hexToBin(num)
+        binary=hex_to_bin(num)
         print('Your number converted to binary: '+str(binary))
-        dec=hexToDec(num)
+        dec=hex_to_dec(num)
         print('Your number converted to decimal: '+str(dec))
         break
