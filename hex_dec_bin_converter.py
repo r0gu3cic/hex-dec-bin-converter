@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def hex_to_dec(hex):
     dec=int(hex, base=16)
     return dec
@@ -15,13 +17,13 @@ def dec_to_bin(dec):
     return binary
 
 def dec_to_hex(dec):
-    hexa=hex(int(dec))[2:]
-    return hexa
+    hex_result=hex(int(dec))[2:]
+    return hex_result
 
 def bin_to_hex(bin):
     dec=bin_to_dec(bin)
-    hexa=dec_to_hex(dec)
-    return hexa
+    hex_result=dec_to_hex(dec)
+    return hex_result
 
 ###MAIN###
 print('''This is simple numerical system converter used to convert hexadecimal,
